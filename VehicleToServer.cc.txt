@@ -1,0 +1,6 @@
+#include "VehicleToServer.h"
+
+
+PBfromKGC::PBfromKGC(const char *name, int kind) : cMessage(name, kind) {}
+
+PBfromKGC::~PBfromKGC() {}

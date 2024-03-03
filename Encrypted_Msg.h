@@ -10,28 +10,23 @@
 using namespace omnetpp;
 using namespace CryptoPP;
 using namespace std;
-#ifndef MESSAGETOBEENC_H_
-#define MESSAGETOBEENC_H_
+#ifndef Encrypted_Msg_H_
+#define Encrypted_Msg_H_
 
-class MessageToBeEncr : public cMessage {
+class Encrypted_Msgr : public cMessage {
 
 private:
     string Message;
-    int originalRSUId;
 public:
-        int  DestID=6;
-        MessageToBeEncr(const char *name = nullptr, int kind = 0,int originalRSUId=0);
-        ~MessageToBeEncr();
+        int  DestID=3;
+        Encrypted_Msgr(const char *name = nullptr, int kind = 0,int originalRSUId=0);
+        ~Encrypted_Msgr();
 
         void setMessage(const string& value) { Message = value; }
         string getMessage() const { return Message; }
-
-        void setoriginalRSUId(int value) { int originalRSUId = value; }
-        int getoriginalRSUId() const { return originalRSUId; }
-
 
 };
 
 
 
-#endif /* MESSAGETOBEENC_H_ */
+#endif /* Encrypted_Msg_H_ */

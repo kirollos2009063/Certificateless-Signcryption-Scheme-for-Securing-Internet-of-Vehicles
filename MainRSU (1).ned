@@ -3,6 +3,6 @@ simple RSU
     parameters:
         bool isRSU=true;
     gates:
-        input InPut[6];
-        output OutPut[6];
+        input InPut[5];
+        output OutPut[5];
 }

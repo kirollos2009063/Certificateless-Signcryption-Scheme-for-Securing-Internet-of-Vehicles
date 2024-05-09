@@ -1,5 +1,0 @@
-#include "PrivANDPub.h"
-
-PuB_privMsg::PuB_privMsg(const char *name, int kind) : cMessage(name, kind) {}
-
-PuB_privMsg::~PuB_privMsg() {}
